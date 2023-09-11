@@ -1,0 +1,1 @@
+PROJECT_ROOT='/workspace/terraform-beginner-bootcamp-2023'
