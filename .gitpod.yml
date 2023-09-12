@@ -2,6 +2,7 @@ tasks:
   - name: terraform
     before: |
       source ./bin/install_terraform_cli
+      source ./bin/generate_tfrc_credentials
   - name: aws-cli
     env:
       AWS_CLI_AUTO_PROMPT: on-partial
