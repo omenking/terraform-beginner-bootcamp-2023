@@ -22,3 +22,4 @@ vscode:
     - amazonwebservices.aws-toolkit-vscode
     - hashicorp.terraform
     - phil294.git-log--graph
+    - mhutchie.git-graph
