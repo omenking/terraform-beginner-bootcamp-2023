@@ -1,0 +1,37 @@
+#! /usr/bin/bash
+
+user_uuid="e328f4ab-b99f-421c-84c9-4ccea042c7d1" 
+token="9b49b3fb-b8e9-483c-b703-97ba88eef8e0"
+name="New House"
+description="A new house description"
+domain_name="3xf332sdfs.cloudfront.net"
+town="cooker-cove"
+content_version=1
+
+# Enable printing of commands
+#set -x
+
+RESPONSE=$(curl -X POST \
+--silent \
+--include \
+-H "Authorization: Bearer $token" \
+-H "Accept: application/json" \
+-H "Content-Type: application/json" \
+-d "{\"town\": \"$town\", \"name\": \"$name\", \"description\": \"$description\", \"domain_name\": \"$domain_name\", \"content_version\": $content_version}" \
+http://localhost:4567/api/u/$user_uuid/homes)
+
+# Disable printing of commands
+#set +x
+
+# Extract headers
+HEADERS=$(echo "$RESPONSE" | awk 'BEGIN {RS="\r\n\r\n"; ORS=RS} NR==1 {print}')
+
+# Extract body
+BODY=$(echo "$RESPONSE" | awk 'BEGIN {RS="\r\n\r\n"; ORS=RS} NR==2 {print}')
+
+# Check if Content-Type indicates JSON and use jq if so
+if echo "$HEADERS" | grep -qi "Content-Type: application/json"; then
+    echo "$BODY" | jq .
+else
+    echo "$BODY"
+fi
