@@ -23,7 +23,7 @@ terraform {
 }
 
 provider "terratowns" {
-  endpoint = "http://localhost:4567"
+  endpoint = "http://localhost:4567/api"
   user_uuid="e328f4ab-b99f-421c-84c9-4ccea042c7d1" 
   token="9b49b3fb-b8e9-483c-b703-97ba88eef8e0"
 }
@@ -37,8 +37,8 @@ provider "terratowns" {
 #  content_version = var.content_version
 #}
 
-resource "terratown_home" "home" {
-  name = "How to play Arcanum in 2023"
+resource "terratowns_home" "home" {
+  name = "How to play Arcanum in 2023!"
   description = <<DESCRIPTION
 Arcanum is a game from 2001 that shipped with alot of bugs.
 Modders have removed all the originals making this game really fun
