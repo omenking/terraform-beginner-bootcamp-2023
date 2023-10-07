@@ -3,10 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payday</title>
+    <title>The Healthy Payday Alternative</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        html, body {
+          background: rgb(255,255,255);
+          height: 100%;
+          width: 100%;
+          padding: 0px;
+          margin: 0px;
+        }
+
+        h1,h2,h3,h4,h5,h6 {
+          margin: 0px;
+        }
+
+        h1 {
+          text-align: center;
+          margin-bottom: 24px;
+          font-size: 70px;
+          line-height: 1em;
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          color: rgb(189,65,27);
+          text-shadow: 1px 1px 0 #000,
+                      -1px 1px 0 #000,
+                      1px -1px 0 #000,
+                      -1px -1px 0 #000,
+                      0px 1px 0 #000,
+                      0px -1px 0 #000,
+                      -1px 0px 0 #000,
+                      1px 0px 0 #000,
+                      2px 2px 0 #000,
+                      -2px 2px 0 #000,
+                      2px -2px 0 #000,
+                      -2px -2px 0 #000,
+                      0px 2px 0 #000,
+                      0px -2px 0 #000,
+                      -2px 0px 0 #000,
+                      2px 0px 0 #000,
+                      1px 2px 0 #000,
+                      -1px 2px 0 #000,
+                      1px -2px 0 #000,
+                      -1px -2px 0 #000,
+                      2px 1px 0 #000,
+                      -2px 1px 0 #000,
+                      2px -1px 0 #000,
+                      -2px -1px 0 #000;
+        }
+
+        nav a {
+          font-size: 24px
+        }
+
+        main {
+          position: relative;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+        .payday-runner {
+          background: url(./assets/paydaybar.jpg);
+          background-repeat: repeat-y;
+          width: 112px;
+          height: 100%;
+          position: absolute;
+          z-index: 1;
+          top: 0px;
+          opacity: 0.3;
+        }
+        .payday-runner.left {
+          left: 16px;
+        }
+        .payday-runner.right {
+          right: 16px;
+        }
+
+        section {
+          border: solid 4px rgb(0,0,0);
+          padding: 24px;
+          border-radius: 8px;
+        }
+
+        h2 {
+          font-size: 32px;
+          font-weight: 800px;
+          font-family: "Comic Sans MS", "Comic Sans", cursive;
+        }
+
+        ul {
+          margin: 0px;
+          padding: 0px;
+          margin-left: 24px;
+        }
+
+        li,
+        p {
+          font-size: 24px;
+          font-family: "Comic Sans MS", "Comic Sans", cursive;
+          line-height: 1.6em
+        }
+
+        .flex-row {
+          display: flex;
+          flex-direction: row;
+          gap: 12px;
+        }
+
+        img {
+          border-radius: 8px;
+          width: 200px;
+          height: 200px;
+          background: rgb(230,230,230);
+        }
+
+        article {
+          position: relative;
+          z-index: 2;
+          padding-top: 24px;
+          padding-bottom: 24px;
+          padding-left: 148px;
+          padding-right: 148px;
+          border-left: solid 12px rgb(189,65,27);
+          border-right: solid 12px rgb(7, 62, 203);
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Making my own payday bars</h1>
-    <img src="/assets/payday-box.jpg" width="300px" />
+  <main>
+    <div class="payday-runner left"></div>
+    <div class="payday-runner right"></div>
+    <article>
+      <h1>The Healthy Payday Alternative</h1>
+      <nav>
+        <ol>
+          <li><a href="#the-mission">The Mission</a></li>
+          <li><a href="#ref-bar">The Referance Bar</a></li>
+          <li><a href="#syrup">The Caramel Syrup</a></li>
+          <li><a href="#peanut">The Peanuts</a></li>
+          <li><a href="#dried">The Died Materials</a></li>
+          <li><a href="#reduction">The Reduction</a></li>
+          <li><a href="#final-mix">Final Mix</a></li>
+          <li><a href="#spreading">The spreading</a></li>
+          <li><a href="#chilling">Chilling</a></li>
+          <li><a href="#final-bar">The Final Bar</a></li>
+        </ol>
+      </nav>
+      <section>
+        <h2 id="the-mission">The Mission</h2>
+          <ul>
+            <li>Payday bars bars are great</li>
+            <li>Payday bars fating</li>
+            <li>Can we make a healthy payday par?</li>
+          </ul>
+        <div class="flex-row">
+          <img src="/assets/payday-box.jpg"  />
+        </div>
+      </section>
+      <section>
+        <h2 id="ref-bar">The Reference Bar</h2>
+        <div class="flex-row">
+          <img src="/assets/1_payday_bar.jpg"  />
+          <img src="/assets/2.1_dim.jpg"  />
+          <img src="/assets/2.2_dim.jpg.jpg"  />
+          <img src="/assets/2.3_dim.jpg"  />
+        </div>
+      </section>
+
+      <section>
+        <h2 id="syrup">The Caramel Syrup</h2>
+        <div class="flex-row">
+<img src="/assets/3.1-coconut-cream.jpg"  />
+<img src="/assets/3.2-splenda.jpg"  />
+<img src="/assets/3.3-vanilla.jpg"  />
+<img src="/assets/3.4-cook.jpg"  />
+        </div>
+      </section>
+
+      <section>
+        <h2 id="peanut">The Peanuts</h2>
+        <div class="flex-row">
+<img src="/assets/4.1-peanuts.jpg"  />
+<img src="/assets/4.2-layout.jpg"  />
+        </div>
+      </section>
+
+      <section>
+        <h2 id="dried">The Reduction</h2>
+        <div class="flex-row">
+<img src="/assets/5.1-oats.jpg"  />
+<img src="/assets/5.2-milled.jpg"  />
+<img src="/assets/5.3-milled.jpg"  />
+<img src="/assets/5.4-peanutbutter.jpg"  />
+<img src="/assets/5.5-ready.jpg"  />
+        </div>
+      </section>
+
+      <section>
+        <h2 id="reduction">The Reduction</h2>
+        <div class="flex-row">
+<img src="/assets/6-reduce.jpg"  />
+        </div>
+      </section>
+
+      <section>
+        <h2 id="final-mix">Final Mix</h2>
+        <div class="flex-row">
+<img src="/assets/7.sieve.jpg"  />
+        </div>
+      </section>
+
+      <section>
+        <h2 id="spreading">The Spreading</h2>
+        <div class="flex-row">
+<img src="/assets/8.1-spread.jpg"  />
+<img src="/assets/8.2-spread.jpg"  />
+<img src="/assets/8.4-pat.jpg"  />
+        </div>
+      </section>
+
+      <section>
+        <h2 id="chilling">The Chilling</h2>
+        <div class="flex-row">
+<img src="/assets/9-chill.jpg"  />
+        </div>
+      </section>
+
+      <section>
+        <h2 id="final-bar">The Final Bar</h2>
+        <div class="flex-row">
+<img src="/assets/10-final.jpg"  />
+        </div>
+      </section>
+
+    </article>
+  </main>
 </body>
 </html>
