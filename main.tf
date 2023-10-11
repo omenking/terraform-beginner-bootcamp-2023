@@ -63,6 +63,6 @@ into Canada, I decided I would see how I could my own Paydays bars,
 and if they are most cost effective.
 DESCRIPTION
   domain_name = module.home_payday_hosting.domain_name
-  town = "missingo"
+  town = "cooker-cove"
   content_version = var.payday.content_version
 }
